@@ -1,13 +1,113 @@
-.jumbotron {
-    height: 500px;
-    text-align: center;
-    padding-top: 8%;
-    font-family: 'Raleway', sans-serif;
-    background-image: url("../IMG/tausta.jpg");
-    background-size: cover;
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-img {
-    width: auto;
-    height: 30px;
+body, html {
+    font-family: 'Raleway', sans-serif;
+    height: 100vh;
+    line-height: 1.5;
+    overflow: hidden;
+}
+
+#pageContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 1rem;
+    padding: 1rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.navbar ul li a:hover {
+    color: skyblue;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#profiili {
+    background: url("../IMG/tausta.jpg") no-repeat center center/cover;
+    background-size: cover;
+    height: 100%;
+    padding-top: 75px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+#profiiliContainer {
+    width: 100%;
+    height: 100vh;
+}
+
+#projektitContainer {
+    width: 100%;
+    height: 100vh;
+}
+
+#CVContainer {
+    width: 100%;
+    height: 100vh;
+}
+
+#profiili h1 {
+    font-size: 2rem;
+}
+
+#profiili p {
+    font-size: 1rem;
+}
+
+#projektit {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+#projektit h1 {
+    font-size: 3rem;
+}
+
+#CV {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+#CV h1 {
+    font-size: 3rem;
 }
