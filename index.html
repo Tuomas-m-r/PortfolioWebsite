@@ -6,32 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="CSS/styles.css">
-    <title>Document</title>
+    <script src="JS/javascript.js"></script>
+    <title>Tuomas Röpelinen - Portfolio</title>
 </head>
 <body>
     <div id="pageContainer">
         <nav class="navbar">
             <ul>
-                <li>
-                    <a href="#profiili">Profiili</a>
-                </li>
-                <li>
-                    <a href="#projektit">Projektit</a>
-                </li>
-                <li>
-                    <a href="#CV">CV</a>
-                </li>
+                <li><a href="#koti">Koti</a></li>
+                <li><a href="#projektit">Projektit</a></li>
+                <li><a href="#CV">CV</a></li>
+                <li><a id="popup" onclick="showContactForm()" href="#otayhteytta">Ota Yhteyttä</a></li>
             </ul>
+            <div id="otayhteytta">
+                <div id="popupContact">
+                    <form action="#" id="form" method="post" name="form">
+                        <h2>Ota Yhteyttä</h2>
+                        <hr>
+                        <input id="nimi" name="nimi" placeholder="Nimi" type="text" required>
+                        <input id="email" name="email" placeholder="Sähköposti" type="text" required>
+                        <textarea id="viesti" name="viesti" placeholder="Viesti" required></textarea>
+                        <button><a href="" id="submit">Lähetä</a></button>
+                        <button><a onclick="hideContactForm()" href="#" id="submit">Sulje</a></button>
+                    </form>
+                </div>
+            </div>
         </nav>
-        <div id="profiiliContainer">
-            <section id="profiili">
-                <h1>Tuomas Röpelinen</h1>
-                <p>Gameplay and graphics programmer   -   C++ - SDL/OpenGL</p>
+        <div id="kotiContainer">
+            <section id="koti">
+                <div id="kotiHeader">
+                    <h1>Tuomas Röpelinen</h1>
+                    <p>>> Gameplay and graphics programmer - C++ - SDL/OpenGL</p>
+                </div>
             </section>
         </div>
         <div id="projektitContainer">
             <section id="projektit">
-                <h1>Projektit</h1>
+                <div id="projektitHeader">
+                    <h1>Projektit</h1>
+                </div>
+                <div id="projektitContent">
+                    <a class="popup" href="https://github.com/Tuomas-m-r/Snake" target="_blank" data-popuptext="Snake Clone with C++ and SDL">
+                        <img src="/IMG/snake.jpg" alt="">
+                    </a>
+                    <a class="popup" href="https://github.com/Tuomas-m-r/Portfolio-Website" target="_blank" data-popuptext="Portfolio Website">
+                        <img src="/IMG/website.jpg" alt="">
+                    </a>
+                </div>
             </section>
         </div>
         <div id="CVContainer">
