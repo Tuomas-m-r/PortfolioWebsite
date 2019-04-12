@@ -27,11 +27,11 @@
                     <form action="#" id="form" method="post" name="form">
                         <h2>Ota Yhteyttä</h2>
                         <hr>
-                        <input id="nimi" name="nimi" placeholder="Nimi" type="text" required>
-                        <input id="email" name="email" placeholder="Sähköposti" type="text" required>
-                        <textarea id="viesti" name="viesti" placeholder="Viesti" required></textarea>
-                        <button><a href="" id="submit">Lähetä</a></button>
-                        <button><a onclick="hideContactForm()" href="#" id="submit">Sulje</a></button>
+                        <input id="nimi" name="nimi" placeholder="Nimi" type="text">
+                        <input id="email" name="email" placeholder="Sähköposti" type="text">
+                        <textarea id="viesti" name="viesti" placeholder="Viesti"></textarea>
+                        <button><a href="" id="laheta">Lähetä</a></button>
+                        <button><a onclick="hideContactForm()" href="" id="sulje">Sulje</a></button>
                     </form>
                 </div>
             </div>
@@ -53,26 +53,30 @@
             <section id="projektit">
                 <div id="projektitHeader">
                     <h1>Projektit</h1>
+                    <hr>
                 </div>
                 <div id="projektitContent">
-                    <a class="popup" href="https://github.com/Tuomas-m-r/Snake" target="_blank" data-popuptext="Snake Clone">
-                        <img src="/IMG/snake.jpg" alt="">
-                    </a>
-                    <a class="popup" href="https://github.com/Tuomas-m-r/Portfolio-Website" target="_blank" data-popuptext="Portfolio Website">
-                        <img src="/IMG/website.jpg" alt="">
-                    </a>
-                    <a class="popup" href="https://github.com/Tuomas-m-r/Portfolio-Website" target="_blank" data-popuptext="Portfolio Website">
-                        <img src="/IMG/website.jpg" alt="">
-                    </a>
-                    <a class="popup" href="https://github.com/Tuomas-m-r/Portfolio-Website" target="_blank" data-popuptext="Portfolio Website">
-                        <img src="/IMG/website.jpg" alt="">
-                    </a>
+                    <div>
+                        <a href="https://github.com/Tuomas-m-r/Snake" target="_blank" data-popuptext="Snake Clone">
+                            <img src="/IMG/snake.jpg" alt="">
+                        </a>
+                        <p>Snake klooni - C++/SDL</p>
+                    </div>
+                    <div>
+                        <a href="https://github.com/Tuomas-m-r/Portfolio-Website" target="_blank" data-popuptext="Portfolio Website">
+                            <img src="/IMG/website.jpg" alt="">
+                        </a>
+                        <p>Portfolio sivu - HTML, CSS, JavaScript</p>
+                    </div>
                 </div>
             </section>
         </div>
         <div id="CVContainer">
             <section id="CV">
-                <h1>CV</h1>
+                <div id="CVHeader">
+                    <h1>CV</h1>
+                    <hr>
+                </div>
             </section>
         </div>
     </div>
