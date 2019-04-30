@@ -234,6 +234,19 @@ hr {
 
 #CVHeader {
     width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+#CVContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#CVContent embed {
+    width: 50%;
+    height: 75vh;
 }
 
 @media only screen and (max-width: 530px){
